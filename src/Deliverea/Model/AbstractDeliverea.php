@@ -30,9 +30,12 @@ abstract class AbstractDeliverea
             $data = (array)$data;
         }
 
-        if (empty($data[$key])) {
-            $data[$key] = $default;
-        };
+        if ($data[$key] == 0) {
+        } else {
+            if (empty($data[$key])) {
+                $data[$key] = $default;
+            };
+        }
 
         return $data[$key];
     }

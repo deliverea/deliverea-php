@@ -35,6 +35,7 @@ trait CreateAddressTrait
         );
 
         $address->setAddress($this->getValue($data, $prefix . 'address', ''));
+        $address->setAddressId($this->getValue($data, $prefix . 'addressId', ''));
         $address->setNif($this->getValue($data, $prefix . 'nif', ''));
         $address->setAttn($this->getValue($data, $prefix . 'attn', ''));
         $address->setEmail($this->getValue($data, $prefix . 'email', ''));
